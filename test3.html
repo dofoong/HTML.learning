@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to use?</title>
+</head>
+<body>
+    <h1>form의 속성 종류</h1>
+    <p>
+        -method : get과 post가 존재하며 get은 데이터크기의 제한이 존재하며 주소 표시줄에 사용자가 입력한 내용이 드러납니다 <br>
+                그런 단점을 보완 하기 위해 post를 사용하면 내용의 길이에 제한받지 않으며 사용자가 입력한 내용도 드러나지 않습니다
+    </p>
+    <p>-name : 자바스크립트로 폼을 제어할 때 사용할 폼의 이름을 지정합니다</p>
+    <p>-action : form태그 안의 내용을 처리해 줄 서버 프로그램을 지정합니다</p>
+    <p>-target : action 속성에서 지정한 스크립트 파일을 현재 창이 아닌 다른 위치에서 열도록 합니다</p>
+    form태그의 autocomplete는 기본 on상태이며 필요시 off로 변환가능합니다
+    <form action="#">
+        <fieldset>
+            <legend>본문과 같은 형식의 폼은 fieldset과 legend를 활용하여 작성</legend>
+        </fieldset>
+    </form>
+    <label for="id">ID</label>
+    <input type="text" id="id">
+    <h2>인풋타입의 종류 130p</h2>
+    <input type="text">text
+    <input type="password">password
+    <input type="search">search
+    <input type="url">url <br>
+    <input type="email">email
+    <input type="tel">tel <input type="checkbox">checkbox <input type="radio">radio <input type="number">number <input type="range">range <br>
+    <input type="date">date <input type="month">month <input type="week">week <input type="time">time <br> <input type="datetime">datetime
+    <input type="datetime-local">datetime-local사용자가 있는지역 기준 <input type="submit">submit <input type="reset">reset  <br><input type="image">submit대신image
+    <input type="button">button <input type="file">file <input type="hidden">hidden
+</body>
+</html>
