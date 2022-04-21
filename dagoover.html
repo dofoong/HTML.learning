@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAGOOVER</title>
+    <style>
+        header{
+            height: 300px;
+            text-align: center;
+            font-size: 50px;
+        }
+        a{
+            text-decoration: none;
+        }
+        content{
+            height: 600px;
+            display: inline;
+            margin: 5px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="base">
+        <header>
+            <a href="dagoover.html"><h1>DAGOOVER</h1></a>
+        </header>
+        <content>
+        <form class="search" target="_blank">
+            <select name="cpage" class="chpage">
+                <option value="google">구글</option>
+                <option value="daum">다음</option>
+                <option value="naver">네이버</option>
+            </select>
+            <input type="text" class="keyword" name="key">
+            <input type="submit" value="검색" class="bt">
+        </form>
+        <script>
+            const Searching = Search.prototype;
+        
+            function Search(){
+            this.keyword = document.querySelector('input[name = "key"]');
+            this.engine = document.querySelector('.chpage');
+            this.button = document.querySelector('.bt');
+            this.form = document.querySelector('.search');
+            this.Engine();
+            }
+            Searching.Engine = function(){
+            this.form.addEventListener('submit', e => {
+        
+                e.preventDefault();
+        
+                let engine = this.engine.value;
+                let keyword = this.keyword.value;
+                if(engine === 'google'){
+                    location.href = 'https://www.google.co.kr/search?q=' + keyword;
+                }else if(engine === 'naver'){
+                    location.href = 'https://search.naver.com/search.naver?query=' + keyword;
+                }else if(engine === 'daum'){
+                    location.href = 'https://search.daum.net/search?w=tot&DA=YZR&t__nil_searchbox=btn&sug=&sugo=&sq=&o=&q=' + keyword;
+                }
+            });
+            }
+            new Search();
+        </script>
+        </content>
+    </div>
+</body>
+</html>
