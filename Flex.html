@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+</head>
+<body>
+    <h1>flex</h1>
+    <p>Flex(플렉스)는 Flexible Box, Flexbox라고 부르기도 합니다.
+        Flex는 레이아웃 배치 전용 기능으로 고안되었습니다 <br> 그래서 레이아웃을 만들 때 딱히 사용할게 없어서 쓰던 float나 inline-block 등을 이용한 기존 방식보다 훨씬 강력하고 편리한 기능들이 많아요.</p>
+        <fieldset>
+            <legend>Flex에 관한 오해</legend>
+            “Grid가 나온 이상, Flex는 구시대의 유물일 뿐이다.”
+
+저는 아니라고 생각합니다. 더 나중에 나온 스펙인 Grid로도 Flex와 똑같이 구현할 수 있는 경우가 많지만, Grid로는 구현이 어려운 레이아웃이거나 Flex를 쓰는게 더 편리한 경우도 있습니다. 그리고 마소가 싼 똥 버렸지만 우리는 여전히 지원해줘야 하는 인터넷 익스플로러(IE)같은 경우는 Flex는 표준 스펙을 지원하지만 Grid는 legacy(고인물) 버전만 지원하기 때문에, 둘 다 잘 알아두고 적재적소에 활용하는 것이 가장 좋다고 생각돼요.
+        </fieldset>
+        <p>
+            실무에서의 궁금증 ie에서 지원이 되는가?<a href="https://caniuse.com/#search=CSS%20Flexible%20Box">"can i use"</a>닷컴에서 확인하면 ie 10과 11은 부분지원중
+            <br>10은 <a href="https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/dev-guides/hh673531(v=vs.85)">자기만의 독자적인 스펙</a>을 지원하고, 11은 그래도 표준스펙을 지원함
+            <br>버그가 꽤나 있지만, 속서을의 특징과 기능을 정확하게 파악하고 있다면 해결해 나갈수 있는 버그들
+            <br>ie의 버그는 위의 can i use 닷컴링크의 "Known Issues"탭에서 확인 가능
+        </p>
+        <p>
+            부모 요소인 div.container를 Flex Container(플렉스 컨테이너)라고 부르고, <br>
+            자식 요소인 div.item들을 Flex Item(플렉스 아이템)이라고 부릅니다. <br>
+            “컨테이너가 Flex의 영향을 받는 전체 공간이고, 설정된 속성에 따라 각각의 아이템들이 어떤 형태로 배치되는 것”이라고 생각하시면 됩니다.
+        </p>
+        <p>
+            Flex의 속성들은,
+            <ol>
+                <li>
+                    컨테이너에 적용하는속성
+                </li>
+                <li>
+                    아이템에 적용하는 속성
+                </li>
+            </ol>
+            이렇게 두가지로 나뉨
+        </p>
+        <h1>Flex 컨테이너에 적용하는 속성들</h1>
+        <h2>display = flex;</h2>
+        <h2>배치 방향 설정(flex-direction)</h2>
+        아이템들이 배치되는 축의 방향을 결정하는 속성입니다. 즉 “메인축의 방향을 가로로 할거냐 세로로 할거냐”를 정해주는 거예요.
+        <h4>row (기본값)</h4>
+        아이템들이 행(가로) 방향으로 배치됩니다.
+        <h4>row-reverse</h4>
+        아이템들이 역순으로 가로 배치됩니다.
+        <h4>column</h4>
+        아이템들이 열(세로) 방향으로 배치됩니다.
+        그냥 block 요소들을 쌓아 놓은 것처럼 보이죠?
+        <h4>column-reverse</h4>
+        아이템들이 역순으로 세로 배치 됩니다.
+        <h2>줄넘김 처리 설정(flex-wrap)</h2>
+        컨테이너가 더 이상 아이템들을 한 줄에 담을 여유 공간이 없을 때
+        아이템 줄 바꿈을 어떻게 할지 결정하는 속성입니다
+</body>
+</html>
