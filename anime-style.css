@@ -1,0 +1,357 @@
+/* @media screen and (max-width:900px){
+    .allcontent{
+        width: 800px
+    }
+    .section1{
+        width: 800px;
+    }
+    .slider_wrapper{
+        display: none;
+    }
+    iframe{
+        width: 800px;
+    }
+    .slides{
+        width: 1600px;
+    }
+    .controls{
+        display: none;
+    }
+} */
+/*test*/
+.test{
+    height: 100vh;
+    width: 99vw;
+    background-color: rgb(0, 0, 0, 0.9);
+    position: absolute;
+    z-index: 1000;
+    display: none;
+}
+#searchoff:hover{
+    cursor: pointer;
+}
+.test i{
+    position: absolute;
+    color: white;
+    font-size: 5rem;
+    top: 100px;
+    right: 150px;
+}
+.test .search{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.test #searchvar{
+    border: none;
+    background: none;
+    color: white;
+    font-size: 2.8rem;
+    border-bottom: 4px solid white;
+    width: 20vw;
+    outline: none;
+}
+#search:hover{
+    cursor: pointer; 
+}
+/*test*/
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+#all{
+    height: 7vh;
+    background-color: rgb(9, 9, 19);
+}
+body{
+    background-color: rgb(19, 19, 37);
+}
+/*main*/
+.allcontent{
+    color: white;
+    width: 1140px;
+    margin: 0 auto;
+}
+.dep2{
+    position: absolute;
+    background-color: white;
+    color: black;
+    z-index: 999;
+    border-radius: 2px;
+    display: block;
+    transition: 0.3s ease-in-out;
+    display: none;
+}
+.menu_wrap .dep1 > li:hover > .dep2{
+    display: block;
+}
+.menu_wrap .dep1 > li > a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.dep2 li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+}
+.dep2 li a:hover{
+    color: red;
+}
+.dep2 li{
+    padding: 0;
+    margin: 7px;
+}
+.menu_wrap .dep1 > li > a:hover{
+    color: rgb(190, 190, 190);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+    background-color: rgb(9, 9, 19);
+}
+nav h1{
+    display: flex;
+    font-size: 2rem;
+    margin: 1vh 0;
+}
+nav h1:hover{
+    cursor: pointer;
+}
+nav .icon:hover{
+    cursor: pointer;
+}
+nav h1 #navcolor{
+    color: rgb(197, 28, 28);
+}
+nav ul{
+    display: flex;
+    margin: 2vh 0;   
+}
+nav ul li{
+    padding: 0 20px 18px 20px;
+    list-style: none;
+    font-weight: 600;
+    margin-right: 2px;
+}
+nav ul li:hover{
+    color: rgb(190, 190, 190);
+    cursor: pointer;
+}
+nav .icon{
+    font-size: 20px;
+    margin: auto 0px;
+}
+nav .icon i{
+    margin-right: 1.5vw;
+}
+/*first*/
+.slider_wrapper{
+    position: relative;
+    width: 1140px;
+    height: 580px;
+    margin: 5vh auto 1vh auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.slides{
+    position: flex;
+    left: 0;
+    top: 0;
+    width: 2280px;
+    transition: transform 0.5s;
+}
+.slides li:not(:last-child){
+    float: left;
+}
+.controls{
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+}
+.controls button{
+    width: 8vw;
+    height: 0.8vh;
+}
+.controls button:hover{
+    cursor: pointer;
+}
+/*next*/
+.allcontent::after{
+    content:"";
+    display:block;
+    clear:both;}
+.section1{
+    width: 1170px;
+}
+.contitle{
+    display: flex;
+    justify-content: space-between;
+    margin: 3vh 0;
+}
+.contitle h2{
+    border-left: 4px solid red;
+    padding: 0vh 0.8vw;
+}
+.contitle p{
+    padding: 1vh 3vw;
+    font-size: 0.95rem;
+}
+.left{
+    width: 780px;
+    float: left;
+}
+.right{
+    width: 390px;
+    float: left;
+}
+.anicontainer{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 780px;
+    margin: 0 -15px;   
+}
+.anilist{
+    width: 230px;
+    display: inline-block;
+}
+.anilist img{
+    width: 100%;
+}
+.anilist{
+    padding: 0 13px;
+}
+.imgbox{
+    position: relative;
+    margin-bottom: 2vh;
+}
+.lefttop{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: rgb(253, 78, 78);
+    padding: 3px 7px;
+    border-radius: 3px;
+    font-size: 1.5vh;
+}
+.leftbottom{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background-color: rgb(58, 58, 58);
+    padding: 3px 7px;
+    border-radius: 3px;
+    font-size: 1.5vh;
+}
+.rightbottom{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgb(58, 58, 58);
+    padding: 3px 7px;
+    border-radius: 3px;
+    font-size: 1.5vh;
+}
+.aniclass{
+    margin-bottom: 1vh;
+}
+.aniclass ul{
+    display: flex;
+    position: relative;
+        
+}
+.aniclass li{
+    background-color: rgb(98, 102, 119);
+    border-radius: 13px;
+    font-size: 1.4vh;
+    padding: 0.2vh 0.5vw;
+    margin-right: 0.4vw;
+}
+.imgbox img{
+    border-radius: 10px;
+}
+.anititle{
+    margin-bottom: 5vh;
+    font-size: 1.2rem;
+}
+/*RIGHT - TOP VIEWS*/
+.contitleside{
+    display: flex;
+    justify-content: space-between;
+    margin: 3vh 0;
+}
+.contitleside h2{
+    border-left: 4px solid red;
+    padding: 0vh 0.8vw;
+}
+.contitleside ul{
+    display: flex;
+    font-size: 0.8rem;
+    margin-right: 1.5vw;
+    padding: 1vh 0;
+}
+.contitleside ul li{
+    padding-left: 0.5vw;
+}
+.contitleside ul li:hover{
+    cursor: pointer;
+}
+.sidebox{
+    position: relative;
+    margin-bottom: 2vh;
+    transition: 0.3s;
+}
+.righttop{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    background-color: rgb(58, 58, 58);
+    padding: 3px 7px;
+    border-radius: 3px;
+    font-size: 1.5vh;
+}
+.justbottom{
+    position: absolute;
+    bottom: 3.1vh;
+    left: 1rem;
+    padding: 3px 7px;
+    border-radius: 3px;
+    font-size: 2vh;
+    width: 18rem;
+}
+.sidebox img{
+    border-radius: 10px;
+    transition: 1s;
+}
+.sidecontainer{
+    padding: 0 13px;
+}
+
+/* RIGHT - COMMNENT */
+
+.commentbox img{
+    float: left;
+}
+.comment-text{
+    margin-left: 6.7rem;
+    width: 12vw;
+}
+.comment-title{
+    font-size: 1.3rem;
+    padding-bottom: 1vh;
+}
+.comment-view{
+    font-size: 0.9rem;
+    color: rgb(143, 143, 143);
+}
+.commentbox{
+    margin-bottom: 4vh;
+}

@@ -1,0 +1,31 @@
+$(document).ready(function(){
+
+    $("#day").click(function(){
+        $("#side1").fadeIn("fast");
+        $("#side2").fadeIn("fast");
+        $("#side3").fadeIn("fast");
+        $("#side4").fadeIn("fast");
+        $("#side5").fadeIn("fast");
+    });
+    $("#week").click(function(){
+        $("#side1").fadeOut("slow");
+        $("#side2").fadeIn("fast");
+        $("#side3").fadeIn("fast");
+        $("#side4").fadeOut("slow");
+        $("#side5").fadeOut("slow");
+    });
+    $("#month").click(function(){
+        $("#side1").fadeOut("slow");
+        $("#side2").fadeIn("fast");
+        $("#side3").fadeOut("slow");
+        $("#side4").fadeIn("fast");
+        $("#side5").fadeOut("slow");
+    });
+    $("#year").click(function(){
+        $("#side1").fadeIn("fast");
+        $("#side2").fadeOut("slow");
+        $("#side3").fadeIn("fast");
+        $("#side4").fadeIn("fast");
+        $("#side5").fadeOut("slow");
+    });
+});

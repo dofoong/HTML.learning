@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  
+  $("#fadeOut").click(function(){
+    $("#testDiv1").fadeOut();
+    $("#testDiv2").fadeOut("slow");
+    $("#testDiv3").fadeOut(6000);
+  });
+  
+  $("#fadeIn").click(function(){
+    $("#testDiv1").fadeIn();
+    $("#testDiv2").fadeIn("slow");
+    $("#testDiv3").fadeIn(6000);
+  });
+});
+</script>
+</head>
+<body>
+
+<button id="fadeOut">페이드 아웃 실행</button><button id="fadeIn">페이드 아웃 실행</button><br><br>
+<div style="padding-left:300px">
+<div id="testDiv1" style="width:100px;height:80px;display:block;background-color:black;float:left;"></div>
+<div id="testDiv2" style="width:100px;height:80px;display:block;background-color:skyblue;float:left;"></div>
+<div id="testDiv3" style="width:100px;height:80px;display:block;background-color:yellow;float:left;"></div>
+</div>
+</body>
+</html>

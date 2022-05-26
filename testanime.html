@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./test.css">
+    <style>
+        *{
+            margin: 0;
+        }
+        img{
+            transition-delay: 0.5s;
+            transition: 0.5s;
+            height: 100px;
+        }
+        div{
+            transition-delay: 0.5s;
+            transition: all 0.5s;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="pic1">아이고야</h1>
+    <h1 id="nod">살려</h1>
+    <div>
+        <div class="pic2"><img src="./img/anime/review-1.jpg" alt="" id="pic2"></div>
+        <div class="pic3"><img src="./img/anime/review-2.jpg" alt="" id="pic3"></div>
+        <div class="pic4"><img src="./img/anime/review-3.jpg" alt="" id="pic4"></div>
+        <div class="pic5"><img src="./img/anime/review-4.jpg" alt="" id="pic5"></div>
+        <div class="pic6"><img src="./img/anime/review-5.jpg" alt="" id="pic6"></div>
+    </div>
+    <script>
+        var hio = document.querySelector('#pic1');
+        var hid = document.querySelector('#nod');
+        var hi2 = document.querySelector('#pic2');
+        var hi22 = document.querySelector('.pic2');
+        var hi3 = document.querySelector('#pic3');
+        var hi33 = document.querySelector('.pic3');
+        var hi4 = document.querySelector('#pic4');
+        var hi44 = document.querySelector('.pic4');
+        var hi5 = document.querySelector('#pic5');
+        var hi55 = document.querySelector('.pic5');
+        var hi6 = document.querySelector('#pic6');
+        var hi66 = document.querySelector('.pic6');
+        hio.onclick = function () {
+            hi2.style.visibility = "hidden";
+            hi2.style.height = "0px";
+            hi22.style.height = "0px";
+            hi3.style.visibility = "hidden";
+            hi3.style.height = "0px";
+            hi33.style.height = "0px";
+            hi6.style.visibility = "hidden";
+            hi6.style.height = "0px";
+            hi66.style.height = "0px";
+        }
+        hid.onclick = function () {
+            hi2.style.visibility = "visible";
+            hi2.style.height = "100px";
+            hi22.style.height = "auto";
+            hi3.style.visibility = "visible";
+            hi3.style.height = "100px";
+            hi33.style.height = "auto";
+            hi4.style.visibility = "visible";
+            hi4.style.height = "100px";
+            hi5.style.visibility = "visible";
+            hi5.style.height = "100px";
+            hi6.style.visibility = "visible";
+            hi6.style.height = "100px";
+            hi66.style.height = "auto";
+        }
+    </script>
+</body>
+</html>
